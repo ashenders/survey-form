@@ -15,41 +15,49 @@
 
 <body>
 
-  <!-- block__element- -modifier -->
-
   <h1 id="title" class="title">Survey Form</h1>
 
   <main class="card">
+    
     <!-- Form -->
     <form action="" id="survey-form" class="form">
+
       <!-- User details -->
       <div class="form__row">
-        <div id="description" class="form__description form__row--centered-content">Let us know how we can improve freeCodeCamp</div>
+        <p id="description" class="form__description form__row--centered-content">
+          Let us know how we can improve freeCodeCamp</p>
       </div>
+
+      <!-- Name -->
       <div class="form__row">
         <div class="form__label">
-          &#42;Name
+          <label id="name-label" for="name">&#42;Name</label>
         </div>
         <div id="name-label" class="form__user-data">
-          <input type="text" class="form__input" name="user-name" id="name" placeholder="Enter your name">
+          <input type="text" class="form__input" name="user-name" id="name" placeholder="Enter your name" required>
         </div>
       </div>
+
+      <!-- Email -->
       <div class="form__row">
         <div class="form__label">
-          &#42;Email
+          <label id="email-label" for="email">&#42;Email</label>
         </div>
         <div id="email-label" class="form__user-data">
-          <input type="email" class="form__input" name="user-email" id="email" placeholder="Enter your email address">
+          <input type="email" class="form__input" name="user-email" id="email" placeholder="Enter your email address" required>
         </div>
       </div>
+
+      <!-- Age -->
       <div class="form__row">
-        <div id="number-label" class="form__label">
-          &#42;Age
+        <div class="form__label">
+            <label id="number-label" for="email">&#42;Email</label>
         </div>
         <div class="form__user-data">
-          <input type="number" class="form__input" name="user-age" id="number" placeholder="Enter your age" min="0" max="130">
+          <input type="number" class="form__input" name="user-age" id="number" placeholder="Enter your age" min="0" max="130" required>
         </div>
       </div>
+
       <!-- User feedback -->
       <div class="form__row">
         <div class="form__label">
@@ -67,23 +75,25 @@
         </div>
       </div>
 
+      <!-- Recommend? -->
       <div class="form__row">
         <div class="form__label">
           &#42;How likely is that you would recommend freeCodeCamp to a friend?
         </div>
         <div class="form__user-data">
           <div class="form__radio-container">
-            <input type="radio" name="recommend-to-friend" id="definitely" class="form__radio">Definitely
+            <input type="radio" name="recommend-to-friend" id="definitely" class="form__radio" value="definitely">Definitely
           </div>
           <div class="form__radio-container">
-            <input type="radio" name="recommend-to-friend" id="maybe" class="form__radio">Maybe
+            <input type="radio" name="recommend-to-friend" id="maybe" class="form__radio" value="maybe">Maybe
           </div>
           <div class="form__radio-container">
-            <input type="radio" name="recommend-to-friend" id="not-sure" class="form__radio">Not sure
+            <input type="radio" name="recommend-to-friend" id="not-sure" class="form__radio" value="not-sure">Not sure
           </div>
         </div>
       </div>
 
+      <!-- Best feature? -->
       <div class="form__row">
         <div class="form__label">
           What do you like most in FCC?
@@ -98,6 +108,8 @@
           </select>
         </div>
       </div>
+
+      <!-- Future improvements -->
       <div class="form__row">
         <div class="form__label">
           Things that should be improved in the future (Check all that apply):
@@ -138,6 +150,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Comments -->
       <div class="form__row">
         <div class="form__label">
           Any Comments or Suggestions?
