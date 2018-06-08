@@ -1,0 +1,140 @@
+/*
+*
+* Globals
+* 
+*/
+
+:root {
+  /* Colors */
+  --primary-light: #CCE6F4;
+  --primary-mid: #4BA3C3;
+  --primary-dark: #175676;
+  --accent: #F39237;
+  /* Shadow */
+  --custom-shadow: 2px 2px 5px 1px #555;
+  ;
+}
+
+* {
+  /* Border Box all the things! */
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: var(--primary-light);
+}
+
+/*
+*
+* Title
+* 
+*/
+
+.title {
+  font-size: 2.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+/*
+ *
+ * Main Card
+ * 
+ */
+
+.card {
+  width: 95%;
+  margin: auto;
+  background-color: var(--primary-dark);
+  color: #FFF;
+  border-radius: .25rem;
+  padding: 1.5rem;
+  box-shadow: var(--custom-shadow);
+}
+
+/*
+ *
+ * Form
+ * 
+ */
+
+.form__row {
+  margin: 1rem;
+}
+
+.form__row--centered-content {
+  text-align: center;
+}
+
+.form__description {
+  margin: 1.5rem auto;
+  font-size: 1.15rem;
+}
+
+.form__label,
+.form__user-data {
+  margin: 1.25rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #CCC;
+  border-radius: .2rem;
+}
+
+.form__select {
+  height: 2.5rem;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  font-size: .8rem;
+  border: 1px solid #CCC;
+  border-radius: .2rem;
+}
+
+.form__select,
+.form__radio-container,
+.form__checkbox-container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.form__radio-container,
+.form__checkbox-container {
+  display: block;
+  margin: .5rem;
+}
+
+.form__radio,
+.form__checkbox {
+  margin-right: .5rem;
+}
+
+.form__textarea {
+  width: 100%;
+	height: 6rem;
+	border: 1px solid #CCC;
+  border-radius: .2rem;
+  padding: 5px;
+  font-size: .8rem;
+  resize: none;
+}
+
+/*
+ *
+ * Submit Button
+ * 
+ */
+
+.form__submit-button {
+  color: #FFF;
+  padding: .75rem 1rem;
+  background-color: var(--accent);
+  border: none;
+  border-radius: .25rem;
+}

@@ -1,0 +1,40 @@
+/*
+ *
+ * Media Queries
+ * 
+ */
+
+@media screen and (min-width: 700px) {
+  .card {
+    width: 90%;
+  }
+  .form__row {
+    box-sizing: border-box;
+  }
+  .form__label {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    vertical-align: text-top;
+  }
+  .form__user-data {
+    display: inline-block;
+    text-align: left;
+    width: 45%;
+    padding: 0;
+    vertical-align: text-top;
+  }
+  .form__select,
+  .form__radio-container,
+  .form__checkbox-container {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: .5rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    width: 85%;
+  }
+}
